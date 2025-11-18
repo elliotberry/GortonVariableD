@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<designspace format="5.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400"/>
+  </axes>
+  <sources>
+    <source familyname="Gorton Digital" filename="gortondigitalLight.ufo" name="Light">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+    </source>
+    <source familyname="Gorton Digital" filename="gortondigitalRegular.ufo" name="Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </source>
+    <source familyname="Gorton Digital" filename="gortondigitalMedium.ufo" name="Medium">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </source>
+    <source familyname="Gorton Digital" filename="gortondigitalHeavy.ufo" name="Heavy">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </source>
+  </sources>
+</designspace>
+

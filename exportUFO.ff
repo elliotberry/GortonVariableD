@@ -2,8 +2,6 @@
 Open($1)
 
 strokeWidths = [210, 280, 315, 420]
-mainFontName = "GortonDigital"
-familyName = "Gorton Digital"
 strokeNames = ["Light", "Regular", "Medium", "Heavy"]
 weightNames = [300, 400, 500, 700]
 
@@ -11,29 +9,25 @@ strokeIndex = 0
 while (strokeIndex < SizeOf(strokeWidths))
 	strokeWidth = strokeWidths[strokeIndex]
 	strokeName = strokeNames[strokeIndex]
-	SetFontNames(mainFontName + strokeName, familyName, familyName + " " + strokeName, strokeName)
-	SetOS2Value("Weight", weightNames[strokeIndex])
-#strokeWidth = 420
+	# Prepare outlines
 	SelectWorthOutputting()
 	SelectFewerSingletons(" ", 0uA0)
 	UnlinkReference()
 	ClearHints()
 	SetLBearing(strokeWidth/2, 1)
-	#SetRBearing(strokeWidth * 3 / 2, 1)
 	SetRBearing(630, 1)
 	Move(strokeWidth/2, 0)
 	ExpandStroke(strokeWidth, 1, 1)
 	RemoveOverlap()
-	# Normalize contours to improve master compatibility for variable fonts
 	CanonicalContours()
 	CanonicalStart()
-	# Simplify near-straight curves to lines consistently
 	Simplify()
 	RoundToInt()
 	AutoHint()
 	AddExtrema()
-	Generate($1:r + strokeName + ".otf")
-	Generate($1:r + strokeName + ".ttf")
+	# Export a UFO master
+	Generate($1:r + strokeName + ".ufo")
 	Revert()
 	strokeIndex = strokeIndex + 1
 endloop
+

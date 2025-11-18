@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>familyName</key>
+    <string>Gorton Digital</string>
+    <key>styleName</key>
+    <string>Regular</string>
+    <key>styleMapFamilyName</key>
+    <string>Gorton Digital Normal</string>
+    <key>styleMapStyleName</key>
+    <string>regular</string>
+    <key>versionMajor</key>
+    <integer>2017</integer>
+    <key>versionMinor</key>
+    <integer>10</integer>
+    <key>copyright</key>
+    <string>This digital file is copyright 2017 R. S. Bartgis.</string>
+    <key>unitsPerEm</key>
+    <integer>3524</integer>
+    <key>capHeight</key>
+    <integer>2520</integer>
+    <key>xHeight</key>
+    <integer>1680</integer>
+    <key>ascender</key>
+    <integer>2520</integer>
+    <key>descender</key>
+    <integer>-1004</integer>
+    <key>italicAngle</key>
+    <real>-15</real>
+    <key>note</key>
+    <string>2017-9-26: Created with FontForge (http://fontforge.org)</string>
+    <key>openTypeHeadCreated</key>
+    <string>2017/09/26 06:23:00</string>
+    <key>openTypeHheaAscender</key>
+    <integer>3028</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-56368</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>420</integer>
+    <key>openTypeNameVersion</key>
+    <string>Version 2017.</string>
+    <key>openTypeOS2WidthClass</key>
+    <integer>5</integer>
+    <key>openTypeOS2WeightClass</key>
+    <integer>400</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>PfEd</string>
+    <key>openTypeOS2FamilyClass</key>
+    <array>
+      <integer>0</integer>
+      <integer>0</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>2940</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-584</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>420</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>3448</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>56788</integer>
+    <key>postscriptFontName</key>
+    <string>GortonDigital</string>
+    <key>postscriptFullName</key>
+    <string>Gorton Digital Normal</string>
+    <key>postscriptWeightName</key>
+    <string>Regular</string>
+    <key>postscriptUnderlineThickness</key>
+    <integer>210</integer>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-420</integer>
+    <key>postscriptIsFixedPitch</key>
+    <false/>
+    <key>guidelines</key>
+    <array/>
+  </dict>
+</plist>

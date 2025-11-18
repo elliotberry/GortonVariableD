@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="asciicircum" format="2">
+  <advance width="1942"/>
+  <unicode hex="005E"/>
+  <outline>
+    <contour>
+      <point x="210" y="1748" type="curve" smooth="yes"/>
+      <point x="210" y="1786"/>
+      <point x="220" y="1822"/>
+      <point x="238" y="1853" type="curve" smooth="yes"/>
+      <point x="684" y="2625" type="line" smooth="yes"/>
+      <point x="720" y="2688"/>
+      <point x="788" y="2730"/>
+      <point x="866" y="2730" type="curve" smooth="yes"/>
+      <point x="944" y="2730"/>
+      <point x="1012" y="2688"/>
+      <point x="1048" y="2625" type="curve" smooth="yes"/>
+      <point x="1494" y="1853" type="line" smooth="yes"/>
+      <point x="1512" y="1822"/>
+      <point x="1522" y="1786"/>
+      <point x="1522" y="1748" type="curve" smooth="yes"/>
+      <point x="1522" y="1632"/>
+      <point x="1428" y="1538"/>
+      <point x="1312" y="1538" type="curve" smooth="yes"/>
+      <point x="1234" y="1538"/>
+      <point x="1166" y="1581"/>
+      <point x="1130" y="1643" type="curve" smooth="yes"/>
+      <point x="866" y="2100" type="line"/>
+      <point x="602" y="1643" type="line" smooth="yes"/>
+      <point x="566" y="1581"/>
+      <point x="498" y="1538"/>
+      <point x="420" y="1538" type="curve" smooth="yes"/>
+      <point x="304" y="1538"/>
+      <point x="210" y="1632"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>2710</integer>
+            <key>width</key>
+            <integer>20</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
