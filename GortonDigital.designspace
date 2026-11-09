@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <designspace format="5.0">
   <axes>
-    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400"/>
+    <axis tag="wght" name="Weight" minimum="300" maximum="700" default="400">
+      <labels>
+        <label uservalue="300" name="Light"/>
+        <label uservalue="400" name="Regular"/>
+        <label uservalue="500" name="Medium"/>
+        <label uservalue="700" name="Heavy"/>
+      </labels>
+    </axis>
   </axes>
   <sources>
     <source familyname="Gorton Digital" filename="gortondigitalLight.ufo" name="Light">
@@ -25,5 +32,26 @@
       </location>
     </source>
   </sources>
+  <instances>
+    <instance familyname="Gorton Digital" stylename="Light" name="Gorton Digital Light">
+      <location>
+        <dimension name="Weight" xvalue="300"/>
+      </location>
+    </instance>
+    <instance familyname="Gorton Digital" stylename="Regular" name="Gorton Digital Regular">
+      <location>
+        <dimension name="Weight" xvalue="400"/>
+      </location>
+    </instance>
+    <instance familyname="Gorton Digital" stylename="Medium" name="Gorton Digital Medium">
+      <location>
+        <dimension name="Weight" xvalue="500"/>
+      </location>
+    </instance>
+    <instance familyname="Gorton Digital" stylename="Heavy" name="Gorton Digital Heavy">
+      <location>
+        <dimension name="Weight" xvalue="700"/>
+      </location>
+    </instance>
+  </instances>
 </designspace>
-

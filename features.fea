@@ -1,0 +1,18 @@
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\A \B \O \D \zero \I \one \E \F \H \L \T \C \G \J \K \M \N \V \W \X \Y \Z \U \P \R \Q 
+	\S \space \four \eight \two \seven \five \hyphen \colon \period \comma \semicolon 
+	\quotesinglbase \quotedblbase \quotedblright \quotedblleft \quoteleft 
+	\quoteright \ellipsis \exclam \quotedbl \quotesingle \plus \multiply \divide 
+	\periodcentered \plusminus \bullet \degree \ordmasculine \percent \slash 
+	\backslash \asterisk \dollar \underscore \bracketleft \bracketright \emdash 
+	\endash \bar \equal \less \greater \braceleft \braceright \asciicircum 
+	\numbersign \uni00AD \brokenbar \parenleft \parenright \three \six \nine 
+	\question \ampersand \at \grave \a \b \c \d \q \p \s \e \h \i \j \u \l \n \x \k \z \v \o \r \f \t 
+	\y \w \yen \cent \mu \sterling \m \g \uni00A0 ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, , , ;
+
+} GDEF;
+

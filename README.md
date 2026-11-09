@@ -75,6 +75,44 @@ lines of the script, as you don't need to open an already open font file.
 You'll also need to alter the ```Generate(``` call to give the right file name.
 
 
+## The Variable Font
+`GortonDigital-VF.ttf` (TrueType) and `GortonDigital-VF.otf` (CFF2) are variable
+fonts with one axis, `wght` from 300 to 700, which is the stroke width.  The four
+static weights are its named instances: Light (300), Regular (400, the default),
+Medium (500) and Heavy (700).  Any value in between works, e.g.
+`font-variation-settings: "wght" 450`.
+
+To rebuild them:
+```
+pip install -r requirements.txt
+python3 build_variable.py
+```
+This runs in three steps:
+1. `export_skeleton.py` (FontForge) dumps the template splines from
+   `gortondigital.sfd` to `skeleton.json`.  It only runs if the `.sfd` is newer
+   than the JSON, so you don't need FontForge unless you change the template.
+2. `gorton_stroke.py` strokes the skeleton at the four pen widths and writes the
+   `gortondigital*.ufo` masters.
+3. `fontmake` interpolates them using `GortonDigital.designspace`.
+
+FontForge's stroker can't be used for the masters: it merges overlapping strokes,
+so each weight ends up with different contours and the weights can't be
+interpolated.  `gorton_stroke.py` draws every weight from one plan instead, so
+the masters always match.  The outlines are deliberately made of overlapping
+contours, filled with the non-zero winding rule; that is normal for variable
+fonts.
+
+CoreText (macOS, iOS, and therefore Safari and Chrome on the Mac) counts
+overlapping contours in four bits, so a glyph with 16 or more layers at one point
+is drawn with holes and stray lines.  `check_overlap_depth.py` checks every glyph
+at every weight and `build_variable.py` refuses to build if one gets too deep.
+Keep that in mind if you add glyphs with very tight curves.
+
+The static fonts above are still produced by `generateStrokes.ff`, and still have
+their original metrics.  The variable font uses cleaned-up ones (upright, with
+sane ascender/descender values).
+
+
 ## Digitization Process
 Because the Gorton font family was created by machinists, it seems reasonable to
 conclude that the creator used geometric principles to draw parts of many
